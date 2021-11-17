@@ -60,7 +60,7 @@ button {
 </head>
 <body>
 
-<form action="/callio" method="post">
+<form action="/lazy_docs/gastro" method="POST">
  <ul>
  	<h3><center>VYBER SPOSOBU STRAVOVANIA V GTI</center></h3>
   <li>
@@ -69,11 +69,11 @@ button {
   </li>
   <li>
     <label for="mail">Adresa:</label>
-    <input type="text" id="lastName" name="lastName">
+    <input type="text" id="lastName" name="address">
   </li>
   <li>
-    <label for="msg">Dátum narodenia:</label>
-    <input type="text" id="address" name="user_message">
+    <label for="msg">Datum narodenia:</label>
+    <input type="text" id="address" name="birthDate">
   </li>
 
   <li>
@@ -81,14 +81,14 @@ button {
     <label for="card">
         <span>Stravovanie:</span>
       </label>
-      <select id="card" name="usercard">
-        <option value="option_card">Formou stravovacej poukážky (karta)</option>
-        <option value="option_bonus">Poskytnutím finančného príspevku</option>
+      <select id="card" name="option">
+        <option value="option_card">Formou stravovacej poukazky (karta)</option>
+        <option value="option_bonus">Poskytnutim financneho prispevku</option>
       </select>
 
   </li>
   <li class="button">
-  <button type="submit">Stiahnuť dokument</button>
+  <button type="submit">Stiahnut dokument</button>
 </li>
  </ul>
 </form>
