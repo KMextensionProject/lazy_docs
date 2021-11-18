@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -18,6 +20,8 @@ import com.gratex.docs.utils.StringMap;
 @Service
 public class DocsService {
 
+	private static final Logger logger = Logger.getAnonymousLogger();
+
 	public void example(HttpServletResponse response, GastroDTO gastro) {
 		validateGastroData(gastro);
 
@@ -27,7 +31,7 @@ public class DocsService {
 		try {
 			DocxUtils.generateDocx(response, Resources.VYBER_SPOSOBU_STRAVOVANIA, "Volba_stravovania.docx", data);
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.log(Level.SEVERE, "Gastro document generation failed", e);
 		}
 	}
 
