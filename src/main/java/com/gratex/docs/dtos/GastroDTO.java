@@ -1,7 +1,6 @@
 package com.gratex.docs.dtos;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.gratex.docs.utils.StringMap;
 
 public class GastroDTO {
 
@@ -42,8 +41,8 @@ public class GastroDTO {
 		this.option = option;
 	}
 
-	public Map<String, String> getAsMap() {
-		Map<String, String> gastroMap = new HashMap<>();
+	public StringMap getAsMap() {
+		StringMap gastroMap = new StringMap();
 		gastroMap.put("fullName", this.fullName);
 		gastroMap.put("address", this.address);
 		gastroMap.put("birthDate", this.birthDate);
