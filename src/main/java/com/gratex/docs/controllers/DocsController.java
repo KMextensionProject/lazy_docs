@@ -18,7 +18,7 @@ public class DocsController {
 
 	@GetMapping(path = "/forms/gastro")
 	public String gastroForm() {
-		return "/WEB-INF/zranica.jsp";
+		return "zranica";
 	}
 
 	@PostMapping(path = "/gastro")
