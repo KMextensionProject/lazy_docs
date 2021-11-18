@@ -65,15 +65,15 @@ button {
  	<h3><center>VYBER SPOSOBU STRAVOVANIA V GTI</center></h3>
   <li>
     <label for="name">Meno a priezvisko:</label>
-    <input type="text" id="name" name="fullName">
+    <input type="text" id="name" name="fullName" required>
   </li>
   <li>
     <label for="mail">Adresa:</label>
-    <input type="text" id="lastName" name="address">
+    <input type="text" id="lastName" name="address" required>
   </li>
   <li>
     <label for="msg">Datum narodenia:</label>
-    <input type="text" id="address" name="birthDate">
+    <input type="text" id="address" name="birthDate" required>
   </li>
 
   <li>
